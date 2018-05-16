@@ -50,7 +50,7 @@ $mail->Subject = 'Enquiry Alert';
 //convert HTML into a basic plain-text alternative body
 //$mail->msgHTML(file_get_contents('contents.html'), dirname(__FILE__));
 
-$mail->Body = "First Name: <b>\"".$_POST['fname']." <br> Last Name: ".$_POST['lname']."<br> Email ID : ".$_POST['email']." <br> Message: ".$_POST['message']."\"</b>";
+$mail->Body = "First Name: <b>\"".$_POST['fname']." <br> Email ID : ".$_POST['email']." <br> Message: ".$_POST['message']."\"</b>";
 
 //Replace the plain text body with one created manually
 $mail->AltBody = 'This is a plain-text message body';
@@ -62,7 +62,7 @@ $mail->isHTML(true);
 if (!$mail->send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } 
-header("Location: index.php");
+header("Location: contact.html");
 
  
 ?>
