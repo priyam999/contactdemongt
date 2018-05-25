@@ -177,7 +177,7 @@
 
 #status,
 .status-mes {
-  background-image: url(../img/preloder.gif);
+  background-image: url(assets/images/preloder.gif);
   background-position: center;
   background-repeat: no-repeat;
   height: 200px;
